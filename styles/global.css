@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--shape-background);
 }
 
 :root {
@@ -37,4 +38,8 @@
   --shape-body: #212427;
   --shape-button: #2D3136;
   --shape-hover: #383D42; 
+}
+
+body {
+  overflow: hidden;
 }
