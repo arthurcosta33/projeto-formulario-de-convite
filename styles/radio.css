@@ -1,0 +1,70 @@
+.input-colors {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.color-input {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+}
+
+.color-input:checked::after {
+  outline: 2px solid var(--brand-light);
+  outline-offset: -2px;
+}
+
+.color-input::after {
+  position: absolute;
+  display: block;
+  content: '';
+  inset: -1px;
+  border-radius: 50%;
+  border: 7px solid var(--input-stroke);
+}
+
+.blue::after {
+  background-color: var(--brand-light);
+}
+
+.navy::after {
+  background-color: var(--navy);
+}
+
+.purple::after {
+  background-color: var(--purple);
+}
+
+.fuschia::after {
+  background-color: var(--fuschia);
+}
+
+.pink::after {
+  background-color: var(--pink);
+}
+
+.danger::after {
+  background-color: var(--danger);
+}
+
+.orange::after {
+  background-color: var(--orange);
+}
+
+.yellow::after {
+  background-color: var(--yellow);
+}
+
+.lime::after {
+  background-color: var(--lime);
+}
+
+.green::after {
+  background-color: var(--green);
+}
+
+.cyan::after {
+  background-color: var(--cyan);
+}
+

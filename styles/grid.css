@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-flow-row {
+  grid-auto-rows: row;
+}
+
+.grid-cols-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+input[type="radio"] {
+  appearance: none;
+}
+
+.card {
+  padding-top: 4px;
+  padding-bottom: 35px;
+  /* padding: 4px 4px 35px 4px; */
+  /* width: 134px; */
+  height: 103px;
+  background-color: var(--shape-button);
+  border: 1px solid red;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  font: var(--body-sm);
+}
+
+.figcaption {
+  border: 1px solid red;
+}

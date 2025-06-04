@@ -1,35 +1,21 @@
 #app {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 100vh;
-  overflow: hidden;
   max-width: 1280px;
   margin: auto;
-  height: 728px;
+  /*height: 728px; */
 }
 
 aside {
-  overflow: auto;
   margin: 1.25rem;
   padding: 2rem 2rem 0;
   background-image: url(../assets/images/Background.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px;
-  
-  & .aside-container {
-    max-width: 21rem;
-    margin-left: auto;
-  }
+  height: 728px;
 }
 
-main {
-  padding: 1.25rem;
-  
-  & .main-container {
-    max-width: 35rem;
-  }
-}
 
 aside h1 {
   font: var(--logo);
@@ -47,3 +33,43 @@ aside img {
   height: 48px;
   margin-bottom: 1rem;
 }
+
+main {
+  overflow: auto;
+  padding: 5rem 8.125rem;
+  margin: 1.25rem;
+  border-radius: 12px;
+  background-color: var(--shape-body);
+  height: 1981px;
+}
+
+main .main-container {
+  max-width: 35rem;
+  margin-left: auto;
+}
+
+.title {
+  font: var(--text-md);
+  color: var(--text-heading);
+  margin-bottom: 2.5rem;
+}
+
+main h2 {
+  font: var(--text-sm);
+  color: var(--text-heading);
+  display: flex;
+  text-align: center;
+}
+
+.event-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.event-info img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+

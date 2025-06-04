@@ -5,7 +5,7 @@
 }
 
 body {
-background-color: var(--shape-background);
+  background-color: var(--shape-background);
 }
 
 :root {
@@ -41,8 +41,4 @@ background-color: var(--shape-background);
   --shape-body: #212427;
   --shape-button: #2D3136;
   --shape-hover: #383D42; 
-}
-
-body {
-  overflow: hidden;
 }
