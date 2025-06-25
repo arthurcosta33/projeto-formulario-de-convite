@@ -15,6 +15,11 @@
   outline-offset: -2px;
 }
 
+.color-input:hover::after {
+  border: 7px solid var(--shape-hover);
+}
+
+
 .color-input::after {
   position: absolute;
   display: block;

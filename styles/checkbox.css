@@ -1,18 +1,20 @@
 .form-row {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   align-items: start;
   gap: 1rem;
 }
 
 .toggle-wrapper {
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  height: 2.265rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .theme-option span:last-child {
-  font: var(--text-sm);
-  color: var(--text-sm);
+  font: var(--body-sm);
+  color: var(--text-heading);
 }
 
 .switch {
@@ -20,6 +22,7 @@
   display: inline-block;
   width: 64px;
   height: 32px;
+  margin: 0;
 }
 
 .switch input {
@@ -51,11 +54,64 @@
   border-radius: 50%;
 }
 
-.switch input:checked + .slider {
+#theme-toggle:checked + label.switch .slider {
   background-color: var(--brand-light);
 }
 
-.switch input:checked + .slider::before {
+#theme-toggle:checked + label.switch .slider::before {
   background-color: var(--text-heading);
   transform: translate(30px, -50%);
+}
+
+/*configurando 'claro' e 'escuro' do checkbox estilo*/
+
+.text-light {
+  display: none;
+}
+
+#theme-toggle:checked ~ .theme-label .text-dark {
+  display: none;
+}
+
+#theme-toggle:checked ~ .theme-label .text-light {
+  display: inline;
+}
+
+/* estilizando os ultimos checkbox a seguir*/
+
+.checkbox-terms {
+  all: unset;
+  display: none;
+}
+
+.custom-checkbox-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.checkbox-image {
+  background-image: url(../assets/images/checkboxdefault.png);
+  width: 1.25rem;
+  height: 1.25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.terms span {
+  font: var(--body-sm);
+  color: var(--text-body);
+}
+
+.terms span strong {
+  color: var(--brand-light);
+  text-decoration: underline;
+}
+
+.checkbox-terms:checked + .custom-checkbox-wrapper .checkbox-image {
+  background-image: url(../assets/images/checkboxcheck.png);
+  transition: 0.1s;
 }

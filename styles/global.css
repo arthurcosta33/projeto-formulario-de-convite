@@ -42,3 +42,21 @@ body {
   --shape-button: #2D3136;
   --shape-hover: #383D42; 
 }
+
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="file"],
+textarea {
+  color: var(--input-placeholder);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  outline: 1px solid var(--brand-light);
+}
+
+#contact-name:focus {
+  outline: none;
+}

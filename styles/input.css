@@ -113,7 +113,7 @@ input[type="date"] {
 .personalization {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
   margin-top: 3rem;
 }
 
@@ -122,3 +122,152 @@ input[type="date"] {
   height: 1.5rem;
   display: block;
 }
+
+.upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  margin-right: 1rem;
+  background-color: var(--shape-button);
+  width: 7.43rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  font: var(--body-sm);
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.upload-btn .icon {
+  background-image: url(../assets/icons/upload.svg);
+  margin-left: 0.75rem;
+}
+
+.input-file::file-selector-button {
+  display: none;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+}
+
+.contact-data {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-data img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.name-contact {
+  background-color: var(--input-base);
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--danger);
+  padding: 1rem;
+}
+
+#contact-name::placeholder {
+  font: var(--body-md);
+}
+
+.alert img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.alert span {
+  font: var(--body-xs);
+  color: var(--danger);
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.name-contact:valid {
+  border-color: var(--input-stroke);
+}
+
+#contact-name:valid + .alert {
+  display: none;
+}
+
+.input-email {
+  background-color: var(--input-base);
+  width: 100%;
+  height: 3rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.input-phone-number {
+  background-color: var(--input-base);
+  width: 100%;
+  height: 3rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+#email::placeholder {
+  font: var(--body-md);
+}
+
+#phone-number::placeholder {
+  font: var(--body-md);
+}
+
+hr {
+  border: none;
+  border: 1px solid var(--input-stroke);
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.last-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  background-color: var(--brand-dark);
+  width: 11rem;
+  height: 3rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.last-button span {
+  font: var(--body-md);
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+button {
+  all: unset;
+}
+
+.last-button img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+

@@ -23,11 +23,10 @@ input[type="radio"] {
 }
 
 .card {
-  padding: 0.25rem 0.25rem 1rem 0.25rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   background-color: var(--shape-button);
   position: relative;
   display: grid;
-  gap: 0.2rem;
   border-radius: 0.5rem;
 }
 
@@ -41,8 +40,7 @@ input[type="radio"] {
 .card h2 {
   font: var(--body-sm);
   display: block;
-  text-align: center;
-  padding-top: 0.70rem;
+  padding: 8px;
 }
 
 .card input[type="radio"] {
@@ -54,4 +52,8 @@ input[type="radio"] {
   outline: 2px solid var(--brand-light);
   outline-offset: -2px;
   border-radius: 8px;
+}
+
+.card:hover {
+  background-color: var(--shape-hover);
 }

@@ -7,13 +7,15 @@
 }
 
 aside {
-  margin: 1.25rem;
+  margin: 1.25rem 0 1.25rem 1.25rem;
   padding: 2rem 2rem 0;
   background-image: url(../assets/images/Background.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px;
   height: 728px;
+  position: sticky;
+  top: 0;
 }
 
 
@@ -31,7 +33,7 @@ aside p {
 aside img {
   width: 45.85px;
   height: 48px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 main {

@@ -85,7 +85,6 @@
           <h2>Personalização</h2>
         </div>
 
-        </form>
         
         <form method="post" enctype="multipart/form-data">
           <div class="input-wrapper">
@@ -227,18 +226,86 @@
             <div class="theme-option">
               <label>Estilo</label>
               <div class="toggle-wrapper">
-                <label class="switch">
-                  <input type="checkbox" id="theme-toggle">
+                <input type="checkbox" id="theme-toggle" hidden>
+                <label for="theme-toggle" class="switch">
                   <span class="slider"></span>
                 </label>
-                <span class="theme-label" id="theme-label">Escuro</span>
+                <span class="theme-label">
+                  <span class="text-dark">Escuro</span>
+                  <span class="text-light">Claro</span>
+                </span>
               </div>
             </div>
             
             <div class="file-upload">
               <label>Foto de capa</label>
+              
+              <div class="upload-button">
+                <label for="upload" class="upload-btn">
+                  <span class="icon"></span>
+                  Selecionar
+                </label>
+                
+                <input type="file" id="upload" accept="image/png, image/jpeg" multiple class="input-file" >
+              </div>
+              
+            </div>
+          </div>
+            
+          <div class="contact-data">
+            <img src="assets/icons/contact.svg" alt="Ícone Contato">
+            <h2>Dados para contato</h2>
+          </div>
+              
+          <div class="input-wrapper">
+            <label for="name-contact">Nome</label>
+            <input class="name-contact" type="text" id="contact-name" placeholder="Nome completo" required>
+            
+            <div class="alert">
+              <img src="assets/icons/circle-alert.svg" alt="Círculo de Alerta">
+              <span>Campo obrigatório</span>
+            </div>
+          </div>
+
+          <div class="grid-container">
+            <div class="input-wrapper">
+              <label for="e-mail">E-mail</label>
+              <input class="input-email" type="text" id="email" placeholder="exemplo@email.com">
             </div>
 
+            <div class="input-wrapper">
+              <label for="phone-number">Telefone</label>
+              <input class="input-phone-number" type="text" id="phone-number" placeholder="(99) 99999-9999">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="terms">
+            <input class="checkbox-terms" type="checkbox" name="terms-conditions" id="terms-conditions-1">
+            <label for="terms-conditions-1" class="custom-checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <span>Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></span>
+            </label>
+
+            <input class="checkbox-terms" type="checkbox" name="terms-conditions" id="terms-conditions-2">
+            <label for="terms-conditions-2" class="custom-checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <span>Aceito receber atualizações e promoções por e-mail</span>
+            </label>
+
+            <input class="checkbox-terms" type="checkbox" name="terms-conditions" id="terms-conditions-3">
+            <label for="terms-conditions-3" class="custom-checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <span>Aceito receber atualizações e promoções por SMS</span>
+            </label>
+          </div>
+
+          <div class="button">
+            <button class="last-button">
+              <img src="assets/icons/ticket.svg" alt="Ícone ticket botão final">
+              <span>Gerar convite</span>
+            </button>
           </div>
         </form>
       </div>
