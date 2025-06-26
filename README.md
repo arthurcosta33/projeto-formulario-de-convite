@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto é um site desktop de convite para evento com formulário para geração do convite personalizado. Nesse desafio, a todo momento nos deparamos com inputs e seus mais diversos tipos, como file, checkbox, text, radio, textarea e mais. No desenvolvimento, me deparei com várias informações novas, e pûde entender a importância real de se ter um conhecimento sólido sobre este conteúdo, pois formulários são extremamente úteis! Estou ansioso pelos próximos conteúdos neste mundo incrível que é o da programação.
+O projeto é um site desktop de convite para evento com formulário para geração do convite personalizado. Nesse desafio, a todo momento me deparei com inputs e seus mais diversos tipos, como file, checkbox, text, radio, textarea e mais. No desenvolvimento, me vi diante de várias informações novas, e pûde entender a importância real de se ter um conhecimento sólido sobre este conteúdo, pois formulários são extremamente úteis! Estou ansioso pelos próximos conteúdos neste mundo incrível que é o da programação.
 
 ## 🔖 Layout
 
